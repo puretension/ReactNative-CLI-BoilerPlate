@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,36 @@
 		15BCB2178F7E9ABF50109A61 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B78120072DF00B09007BCFB6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78120062DF00B09007BCFB6 /* WidgetKit.framework */; };
+		B78120092DF00B09007BCFB6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78120082DF00B09007BCFB6 /* SwiftUI.framework */; };
+		B78120142DF00B0A007BCFB6 /* DohyeongExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B78120052DF00B09007BCFB6 /* DohyeongExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B78120232DF012B7007BCFB6 /* SharedDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = B78120222DF012B1007BCFB6 /* SharedDefaults.m */; };
+		B78120262DF0136B007BCFB6 /* WidgetKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78120252DF0136B007BCFB6 /* WidgetKit.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B78120122DF00B0A007BCFB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B78120042DF00B09007BCFB6;
+			remoteInfo = DohyeongExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B78120152DF00B0A007BCFB6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B78120142DF00B0A007BCFB6 /* DohyeongExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* RNBoilerPlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNBoilerPlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,8 +53,43 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNBoilerPlate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBoilerPlate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RNBoilerPlate/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNBoilerPlate/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B78120052DF00B09007BCFB6 /* DohyeongExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DohyeongExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78120062DF00B09007BCFB6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B78120082DF00B09007BCFB6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B781201A2DF00B19007BCFB6 /* RNBoilerPlate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNBoilerPlate.entitlements; path = RNBoilerPlate/RNBoilerPlate.entitlements; sourceTree = "<group>"; };
+		B781201B2DF00B54007BCFB6 /* DohyeongExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DohyeongExtension.entitlements; sourceTree = "<group>"; };
+		B78120202DF00FFC007BCFB6 /* DohyeongExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DohyeongExtensionRelease.entitlements; sourceTree = "<group>"; };
+		B78120212DF01008007BCFB6 /* RNBoilerPlateRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNBoilerPlateRelease.entitlements; path = RNBoilerPlate/RNBoilerPlateRelease.entitlements; sourceTree = "<group>"; };
+		B78120222DF012B1007BCFB6 /* SharedDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedDefaults.m; sourceTree = "<group>"; };
+		B78120242DF012CA007BCFB6 /* SharedDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedDefaults.h; sourceTree = "<group>"; };
+		B78120252DF0136B007BCFB6 /* WidgetKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKit.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B78120182DF00B0A007BCFB6 /* Exceptions for "Dohyeong" folder in "DohyeongExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B78120042DF00B09007BCFB6 /* DohyeongExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B781200A2DF00B09007BCFB6 /* Dohyeong */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B78120182DF00B0A007BCFB6 /* Exceptions for "Dohyeong" folder in "DohyeongExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Dohyeong;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
@@ -36,12 +100,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B78120022DF00B09007BCFB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78120092DF00B09007BCFB6 /* SwiftUI.framework in Frameworks */,
+				B78120072DF00B09007BCFB6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		13B07FAE1A68108700A75B9A /* RNBoilerPlate */ = {
 			isa = PBXGroup;
 			children = (
+				B78120252DF0136B007BCFB6 /* WidgetKit.swift */,
+				B78120242DF012CA007BCFB6 /* SharedDefaults.h */,
+				B78120222DF012B1007BCFB6 /* SharedDefaults.m */,
+				B78120212DF01008007BCFB6 /* RNBoilerPlateRelease.entitlements */,
+				B781201A2DF00B19007BCFB6 /* RNBoilerPlate.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -56,6 +134,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-RNBoilerPlate.a */,
+				B78120062DF00B09007BCFB6 /* WidgetKit.framework */,
+				B78120082DF00B09007BCFB6 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,8 +150,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B78120202DF00FFC007BCFB6 /* DohyeongExtensionRelease.entitlements */,
+				B781201B2DF00B54007BCFB6 /* DohyeongExtension.entitlements */,
 				13B07FAE1A68108700A75B9A /* RNBoilerPlate */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				B781200A2DF00B09007BCFB6 /* Dohyeong */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -85,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* RNBoilerPlate.app */,
+				B78120052DF00B09007BCFB6 /* DohyeongExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,15 +196,37 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				B78120152DF00B0A007BCFB6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B78120132DF00B0A007BCFB6 /* PBXTargetDependency */,
 			);
 			name = RNBoilerPlate;
 			productName = RNBoilerPlate;
 			productReference = 13B07F961A680F5B00A75B9A /* RNBoilerPlate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B78120042DF00B09007BCFB6 /* DohyeongExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B78120192DF00B0A007BCFB6 /* Build configuration list for PBXNativeTarget "DohyeongExtension" */;
+			buildPhases = (
+				B78120012DF00B09007BCFB6 /* Sources */,
+				B78120022DF00B09007BCFB6 /* Frameworks */,
+				B78120032DF00B09007BCFB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B781200A2DF00B09007BCFB6 /* Dohyeong */,
+			);
+			name = DohyeongExtension;
+			productName = DohyeongExtension;
+			productReference = B78120052DF00B09007BCFB6 /* DohyeongExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -128,10 +234,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					B78120042DF00B09007BCFB6 = {
+						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -149,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNBoilerPlate */,
+				B78120042DF00B09007BCFB6 /* DohyeongExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +273,13 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				15BCB2178F7E9ABF50109A61 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78120032DF00B09007BCFB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,11 +365,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78120232DF012B7007BCFB6 /* SharedDefaults.m in Sources */,
+				B78120262DF0136B007BCFB6 /* WidgetKit.swift in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B78120012DF00B09007BCFB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B78120132DF00B0A007BCFB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B78120042DF00B09007BCFB6 /* DohyeongExtension */;
+			targetProxy = B78120122DF00B0A007BCFB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
@@ -259,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RNBoilerPlate/RNBoilerPlate.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KSL7J6B67H;
 				ENABLE_BITCODE = NO;
@@ -274,7 +411,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dohyeong.widget;
 				PRODUCT_NAME = RNBoilerPlate;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -288,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RNBoilerPlate/RNBoilerPlateRelease.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KSL7J6B67H;
 				INFOPLIST_FILE = RNBoilerPlate/Info.plist;
@@ -302,7 +440,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dohyeong.widget;
 				PRODUCT_NAME = RNBoilerPlate;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -461,6 +599,97 @@
 			};
 			name = Release;
 		};
+		B78120162DF00B0A007BCFB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = DohyeongExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KSL7J6B67H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dohyeong/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dohyeong;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dohyeong.widget.widgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DohyeongExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B78120172DF00B0A007BCFB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = DohyeongExtensionRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KSL7J6B67H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dohyeong/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dohyeong;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dohyeong.widget.widgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DohyeongExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -478,6 +707,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B78120192DF00B0A007BCFB6 /* Build configuration list for PBXNativeTarget "DohyeongExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78120162DF00B0A007BCFB6 /* Debug */,
+				B78120172DF00B0A007BCFB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
