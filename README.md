@@ -106,8 +106,3 @@ yarn start
 
 ---
 
-## 🗓️ Updated
-
-- Last updated: **2025.04.19**
-- Maintainer: [@idohyeong](https://github.com/idohyeong)
-- 문의 또는 피드백은 환영합니다:)

@@ -2,7 +2,7 @@
 //  WidgetKit.swift
 //  ReactNativeIOSWidget
 //
-//  Created by 도형 on 2025/08/16
+//  Created by 도형 on 2025/06/04
 //
 import WidgetKit
 

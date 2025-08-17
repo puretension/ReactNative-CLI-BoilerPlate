@@ -24,7 +24,7 @@
       </activity>
 
     <!-- AppWidgetProvider 클래스를 사용하여 위젯 브로드캐스트 처리 -->
-    <receiver android:name="com.rnboilerplate.MyWidgetProvider" android:exported="true">
+    <receiver android:name="com.tigo.MyWidgetProvider" android:exported="true">
     <intent-filter>
         <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
     </intent-filter>

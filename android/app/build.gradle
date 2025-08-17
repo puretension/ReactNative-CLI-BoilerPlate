@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.rnboilerplate"
+    namespace "com.tigo"
     defaultConfig {
-        applicationId "com.rnboilerplate"
+        applicationId "com.tigo"
         minSdkVersion rootProject.ext.minSdkVersion // minSdkVersion: 앱이 실행 가능한 최소 Android 버전 (API 21 = Android 5.0)
         targetSdkVersion rootProject.ext.targetSdkVersion // targetSdkVersion: 앱이 테스트하고 배포할 때 사용하는 최신 Android 버전 (API 34 = Android 14)
         versionCode 1
